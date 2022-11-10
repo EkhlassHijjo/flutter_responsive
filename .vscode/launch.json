@@ -1,0 +1,47 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Android SDK built for x86",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "deviceId": "emulator-5554"
+        },
+        {
+            "name": "Android SDK built for x86",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "deviceId": "emulator-5556"
+        },
+        {
+            "name": "chrome  ",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "deviceId": "web-javascript"
+        },
+        {
+            "name": "responsive_and_adaptive (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "responsive_and_adaptive (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "All Devices",
+            "configurations": ["Android SDK built for x86","Android SDK built for x86"]
+        }
+    ]
+}
