@@ -3,7 +3,7 @@ import 'package:intl/intl.dart';
 
 class DateTimeScreen extends StatelessWidget {
   final dateTime = DateTime.now();
-  var dateTimeController = TextEditingController();
+ final  dateTimeController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(

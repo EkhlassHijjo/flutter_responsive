@@ -21,9 +21,10 @@ class PageScreen3 extends StatelessWidget {
               child: MaterialButton(
                 textColor: Colors.white,
                 onPressed: () {
-                   Navigator.pushReplacementNamed(context, '/page_screen_1');
+                  Navigator.pushReplacementNamed(context, '/page_screen_1');
                   // Get.offAll(PageScreen1());
-                    // Get.off(PageScreen1());
+                  Get.offNamed('PageScreen1()');
+                  // Get.off(PageScreen1());
                 },
                 child: Text('Page 1'),
               ),
@@ -53,6 +54,10 @@ class PageScreen3 extends StatelessWidget {
                 onPressed: () {
                   // Navigator.pop(context);
                   // Get.back();
+                  Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(builder: (_) => PageScreen3()),
+                      (route) => false);
                 },
                 child: Text('Back'),
               ),

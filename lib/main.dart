@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:responsive_and_adaptive/botton_sheet.dart';
 import 'package:responsive_and_adaptive/date_time.dart';
 import 'package:responsive_and_adaptive/desktop_screen.dart';
 import 'package:responsive_and_adaptive/example.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // initialRoute: '/home',
-      home: HomeScreen(),
+      home: BootomSheetScrren(),
       // routes: {
       //   '/home': (context) => HomeScreen(),
       // },
